@@ -22,7 +22,7 @@ flowchart TB
         Orders["Orders"]
         Invoices["Invoices"]
     end
-
+    graph TD
     subgraph Data Factory["Data Factory"]
         DF["Pipelines"]
         subgraph Lakehouse
@@ -45,10 +45,6 @@ flowchart TB
     ERP --> DF
     Orders --> DF
     Invoices --> DF
-
-    DF --> Bronze
-    Bronze --> Silver
-    Silver --> Gold
 
     Gold --> WH
     WH --> SM
