@@ -35,7 +35,7 @@ flowchart TB
         SM["Semantic Model"]
     end
 
-    subgraph Reporting["Reporting"]
+    subgraph Analytics & Reporting["Analytics & Reporting"]
         Revenue["Revenue"]
         Sales["Sales"]
         Customer["Customers"]
