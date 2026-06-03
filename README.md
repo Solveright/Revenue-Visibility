@@ -24,7 +24,7 @@ flowchart TB
     end
 
     subgraph Data Factory
-        DF["Data Factory"]
+        DF["Pipelines"]
 
         subgraph Lakehouse["Lakehouse"]
             Bronze["Bronze<br/>Raw Data"]
@@ -36,7 +36,7 @@ flowchart TB
         SM["Semantic Model"]
     end
 
-    subgraph BI["BI"]
+    subgraph Result["Result"]
         Revenue["Revenue Dashboard"]
         Sales["Sales Analysis"]
         Customer["Customer Insights"]
