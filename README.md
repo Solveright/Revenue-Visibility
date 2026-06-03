@@ -26,7 +26,8 @@ flowchart TB
     subgraph Data Factory
         DF["Pipelines"]
 
-        subgraph Lakehouse["Lakehouse"]
+    subgraph Lakehouse["Lakehouse"]
+            Entry[" "]
             Bronze["Bronze<br/>Raw Data"]
             Silver["Silver<br/>Business Data"]
             Gold["Gold<br/>Revenue Metrics"]
