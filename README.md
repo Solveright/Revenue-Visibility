@@ -24,7 +24,7 @@ flowchart TB
         Invoices["Invoices"]
     end
 
-    subgraph
+    subgraph Data Factory
         DF["Data Factory"]
 
         subgraph Lakehouse["Lakehouse"]
