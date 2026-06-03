@@ -22,7 +22,6 @@ flowchart TB
         Orders["Orders"]
         Invoices["Invoices"]
     end
-    graph TD
     subgraph Data Factory["Data Factory"]
         DF["Pipelines"]
         subgraph Lakehouse
