@@ -23,8 +23,8 @@ flowchart TB
         Invoices["Invoices"]
     end
 
-    subgraph Fabric["Microsoft Fabric"]
-        DF["Data Factory<br/>Pipelines"]
+    subgraph Data Factory["Data Factory"]
+        DF["Pipelines"]
 
         subgraph Lakehouse["Lakehouse"]
             Bronze["Bronze<br/>Raw Data"]
