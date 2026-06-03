@@ -25,12 +25,10 @@ flowchart TB
 
     subgraph Data Factory["Data Factory"]
         DF["Pipelines"]
-
-        subgraph Lakehouse["Lakehouse"]
-            Bronze["Bronze<br/>Raw Data"]
-            Silver["Silver<br/>Business Data"]
-            Gold["Gold<br/>Revenue Metrics"]
-        end
+        subgraph Lakehouse
+        A[Bronze<br>Raw Data] --> B[Silver<br>Business Data]
+        B --> C[Gold<br>Revenue Metrics]
+    end
 
         WH["Warehouse"]
         SM["Semantic Model"]
