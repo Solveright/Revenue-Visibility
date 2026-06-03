@@ -27,7 +27,7 @@ flowchart TB
         DF["Pipelines"]
 
         subgraph Lakehouse["Lakehouse"]
-            Bronze["<br/><br/>Bronze<br/>Raw Data"]
+            Bronze["Bronze<br/>Raw Data"]
             Silver["Silver<br/>Business Data"]
             Gold["Gold<br/>Revenue Metrics"]
         end
