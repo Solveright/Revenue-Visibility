@@ -31,8 +31,9 @@ flowchart TB
             B --> C["Gold<br>Revenue Metrics"]
         end
 
-        WH["Warehouse"]
-        SM["Semantic Model"]
+    subgraph Analytics["<br>Analytics Layer"]
+        Warehouse[Warehouse]
+        Semantic[Semantic Model]
     end
 
     subgraph Reporting["Reporting"]
