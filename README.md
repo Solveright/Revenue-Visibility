@@ -25,11 +25,12 @@ flowchart TB
 
     subgraph DF_Env["<br>Data Factory"]
         DF["Data Factory<br>Pipelines"]
-        
+    end
+   
     subgraph Lakehouse["<br>Lakehouse"]
             A["Bronze<br>Raw Data"] --> B["Silver<br>Business Data"]
             B --> C["Gold<br>Revenue Metrics"]
-        end
+    end
 
     subgraph Analytics["<br>Analytics Layer"]
         WH[Warehouse]
