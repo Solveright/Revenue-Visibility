@@ -22,12 +22,14 @@ flowchart TB
         Orders["Orders"]
         Invoices["Invoices"]
     end
-    subgraph Data Factory["Data Factory"]
+
+    subgraph DF_Env["Data Factory"]
         DF["Pipelines"]
-        subgraph Lakehouse
-        A[Bronze<br>Raw Data] --> B[Silver<br>Business Data]
-        B --> C[Gold<br>Revenue Metrics]
-    end
+        
+        subgraph Lakehouse["Lakehouse"]
+            A["Bronze<br>Raw Data"] --> B["Silver<br>Business Data"]
+            B --> C["Gold<br>Revenue Metrics"]
+        end
 
         WH["Warehouse"]
         SM["Semantic Model"]
@@ -40,14 +42,18 @@ flowchart TB
         Forecast["Forecast"]
     end
 
+    %% Data Ingestion
     CRM --> DF
     ERP --> DF
     Orders --> DF
     Invoices --> DF
 
-    Gold --> WH
+    %% Inside Data Factory Flow
+    DF --> A
+    C --> WH
     WH --> SM
 
+    %% Reporting Layer Consumption
     SM --> Revenue
     SM --> Sales
     SM --> Customer
