@@ -8,11 +8,10 @@
 
 **Highlights:**
 
-* Built an end-to-end revenue analytics solution using Microsoft Fabric
-* Implemented Medallion Architecture (Bronze, Silver, Gold) for business data
-* Developed a dimensional model for revenue, customer, product, and sales analysis
-* Created Power BI dashboards for executive reporting and revenue visibility
-* Automated data ingestion and transformation using Fabric Data Factory
+- Built a revenue visibility platform using Microsoft Fabric
+- Implemented Bronze, Silver, and Gold data layers
+- Developed dimensional models for sales and customer analytics
+- Delivered automated Power BI executive reporting
 
 ```mermaid
 flowchart TB
