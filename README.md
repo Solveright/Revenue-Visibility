@@ -23,11 +23,10 @@ flowchart TB
         Invoices["Invoices"]
     end
 
-    subgraph Data Factory
-        DF["Pipelines"]
+    subgraph Fabric["Microsoft Fabric"]
+        DF["Data Factory<br/>Pipelines"]
 
-    subgraph Lakehouse["Lakehouse"]
-            Dummy[" "]
+        subgraph Lakehouse["Lakehouse"]
             Bronze["Bronze<br/>Raw Data"]
             Silver["Silver<br/>Business Data"]
             Gold["Gold<br/>Revenue Metrics"]
@@ -38,10 +37,10 @@ flowchart TB
     end
 
     subgraph Reporting["Reporting"]
-        Revenue["Revenue Dashboard"]
-        Sales["Sales Analysis"]
-        Customer["Customer Insights"]
-        Forecast["Revenue Forecast"]
+        Revenue["Revenue"]
+        Sales["Sales"]
+        Customer["Customers"]
+        Forecast["Forecast"]
     end
 
     CRM --> DF
