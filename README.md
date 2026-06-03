@@ -32,8 +32,8 @@ flowchart TB
         end
 
     subgraph Analytics["<br>Analytics Layer"]
-        Warehouse[Warehouse]
-        Semantic[Semantic Model]
+        WH[Warehouse]
+        SM[Semantic Model]
     end
 
     subgraph Reporting["Reporting"]
