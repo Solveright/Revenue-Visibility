@@ -4,7 +4,7 @@
 
 **Tech Stack:**
 
-* Microsoft Fabric, Data Factory, Lakehouse, Warehouse, Power BI, DAX
+* Data Factory, Lakehouse, Warehouse, Power BI, DAX
 
 **Highlights:**
 
